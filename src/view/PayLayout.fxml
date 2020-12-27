@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PayController">
+   <children>
+      <Label layoutX="68.0" layoutY="68.0" prefHeight="34.0" prefWidth="66.0" text="Mã Phòng">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ID_P" layoutX="153.0" layoutY="73.0" />
+      <Label layoutX="285.0" layoutY="22.0" prefHeight="34.0" prefWidth="149.0" text="Trang Thanh Toán">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="69.0" prefHeight="34.0" prefWidth="84.0" text="Tên Phòng">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="120.0" prefHeight="34.0" prefWidth="66.0" text="Ngày Đến">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="120.0" prefHeight="34.0" prefWidth="92.0" text="Ngày Đăng Kí">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="188.0" prefHeight="34.0" prefWidth="66.0" text="Tiền Phạt">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="403.0" prefHeight="34.0" prefWidth="92.0" text="Tiền Còn Lại">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="188.0" prefHeight="34.0" prefWidth="66.0" text="Tiền Cọc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="154.0" prefHeight="34.0" prefWidth="66.0" text="Ngày Đi">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="61.0" layoutY="350.0" prefHeight="153.0" prefWidth="409.0">
+        <columns>
+          <TableColumn fx:id="stt" prefWidth="51.0" text="STT" />
+          <TableColumn fx:id="tenThietBi" prefWidth="100.0" text="Tên Thiết Bị" />
+            <TableColumn fx:id="soLuong" prefWidth="81.0" text="Số Lượng" />
+            <TableColumn fx:id="soLuongHong" prefWidth="103.0" text="Số Lượng Hỏng" />
+            <TableColumn fx:id="tienPhat" prefWidth="70.0" text="Tiền Phạt" />
+        </columns>
+      </TableView>
+      <Label layoutX="58.0" layoutY="307.0" prefHeight="34.0" prefWidth="112.0" text="Trạng Thái Phòng" />
+      <Label layoutX="61.0" layoutY="241.0" prefHeight="34.0" prefWidth="112.0" text="Chi Tiết Tiền Phạt">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="282.0" prefHeight="25.0" prefWidth="112.0" text="Trả Phòng Trễ" />
+      <Separator layoutX="7.0" layoutY="240.0" prefHeight="2.0" prefWidth="791.0" />
+      <Label layoutX="61.0" layoutY="154.0" prefHeight="34.0" prefWidth="92.0" text="Ngày Hẹn Đi">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tenPhong" layoutX="525.0" layoutY="69.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngayDi" layoutX="525.0" layoutY="154.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tongTienPhat" layoutX="525.0" layoutY="188.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tienCoc" layoutX="161.0" layoutY="188.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngayHenDi" layoutX="161.0" layoutY="154.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngayDangKi" layoutX="161.0" layoutY="120.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngayDen" layoutX="525.0" layoutY="120.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="trePhong" layoutX="153.0" layoutY="278.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tienConLai" layoutX="689.0" layoutY="403.0" prefHeight="34.0" prefWidth="133.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="thanhToan" layoutX="651.0" layoutY="454.0" mnemonicParsing="false" text="Thanh toán" />
+      <Separator layoutX="542.0" layoutY="312.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Label fx:id="inID" layoutX="302.0" layoutY="78.0" />
+      <Label fx:id="inSLH" layoutX="294.0" layoutY="333.0" />
+      <Button fx:id="getInfo" layoutX="153.0" layoutY="98.0" mnemonicParsing="false" text="Lấy thông tin" />
+      <Button fx:id="set" layoutX="476.0" layoutY="350.0" mnemonicParsing="false" text="Cập nhật" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListCustomerController">
+   <children>
+      <TableView fx:id="table" layoutX="9.0" layoutY="53.0" prefHeight="349.0" prefWidth="902.0">
+        <columns>
+          <TableColumn fx:id="stt" prefWidth="34.0" text="STT" />
+          <TableColumn fx:id="id" prefWidth="53.0" text="ID" />
+            <TableColumn fx:id="ten" prefWidth="94.0" text="Tên" />
+            <TableColumn fx:id="cmnd" prefWidth="73.0" text="CMND" />
+            <TableColumn fx:id="gioiTinh" prefWidth="57.0" text="Giới tính" />
+            <TableColumn fx:id="ngaySinh" text="Ngày sinh" />
+            <TableColumn fx:id="diaChi" prefWidth="121.0" text="Địa Chỉ" />
+            <TableColumn fx:id="dienThoai" prefWidth="70.0" text="Điện Thoại" />
+            <TableColumn fx:id="quocTich" prefWidth="61.0" text="Quốc tịch" />
+            <TableColumn fx:id="nghe" prefWidth="71.0" text="Nghề" />
+            <TableColumn fx:id="phanLoai" prefWidth="75.0" text="Phân loại" />
+            <TableColumn fx:id="toChuc" prefWidth="111.0" text="Tổ chức" />
+        </columns>
+      </TableView>
+      <Label layoutX="376.0" layoutY="14.0" prefHeight="31.0" prefWidth="196.0" text="Danh Sách Khách Hàng">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="scan" layoutX="851.0" layoutY="426.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="In" />
+   </children>
+</AnchorPane>

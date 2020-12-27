@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="464.0" layoutY="68.0" prefHeight="36.0" prefWidth="166.0" text="Chương Trình ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="104.0" prefHeight="36.0" prefWidth="275.0" text="Quản Lý Khách Sạn ABC">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="187.0" text="Địa chỉ : Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="219.0" text="Di động : 024 38692222 -  024 38696099">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="275.0" text="Email : qlks@hust.edu.vn">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="247.0" text="Fax : 04 3868 0485">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="234.0" fitWidth="177.0" layoutX="287.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../template/logo_hust.jpg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

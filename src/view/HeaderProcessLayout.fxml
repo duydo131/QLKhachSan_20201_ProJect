@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HeaderProcessController">
+   <children>
+      <Button fx:id="book" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" text="Đặt Phòng" />
+      <Button fx:id="customer" layoutX="204.0" layoutY="5.0" mnemonicParsing="false" text="Khách Hàng" />
+      <Button fx:id="device" layoutX="435.0" layoutY="5.0" mnemonicParsing="false" text="Thiết Bị" />
+      <Button fx:id="staff" layoutX="298.0" layoutY="5.0" mnemonicParsing="false" text="Nhân Viên" />
+      <Button fx:id="room" layoutX="378.0" layoutY="5.0" mnemonicParsing="false" text="Phòng" />
+      <Button fx:id="pay" layoutX="95.0" layoutY="5.0" mnemonicParsing="false" text="Thanh toán" />
+      <Button fx:id="statistical" layoutX="512.0" layoutY="5.0" mnemonicParsing="false" text="Thống kê" />
+   </children>
+</AnchorPane>

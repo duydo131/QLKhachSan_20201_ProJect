@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProcessController">
+   <children>
+      <VBox prefHeight="566.0" prefWidth="838.0">
+         <children>
+            <AnchorPane fx:id="headerProcess" prefHeight="34.0" prefWidth="838.0" />
+            <AnchorPane fx:id="mainProcess" prefHeight="529.0" prefWidth="838.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookRoomController">
+   <children>
+      <AnchorPane fx:id="thongtinkhachhang" layoutX="6.0" layoutY="7.0" prefHeight="222.0" prefWidth="776.0">
+         <children>
+            <Label layoutX="328.0" layoutY="3.0" prefHeight="23.0" prefWidth="120.0" text="Thông tin khách hàng" />
+            <Label layoutX="25.0" layoutY="34.0" prefHeight="17.0" prefWidth="96.0" text="Tên khách hàng" />
+            <Label layoutX="25.0" layoutY="82.0" text="Địa chỉ" />
+            <Label layoutX="25.0" layoutY="128.0" text="Giới tính" />
+            <Label layoutX="286.0" layoutY="34.0" text="Ngày sinh" />
+            <Label layoutX="286.0" layoutY="82.0" text="Điện thoại" />
+            <Label layoutX="286.0" layoutY="128.0" prefHeight="17.0" prefWidth="46.0" text="CMND" />
+            <Label layoutX="286.0" layoutY="173.0" prefHeight="17.0" prefWidth="36.0" text="Nghề" />
+            <Label layoutX="25.0" layoutY="173.0" prefHeight="17.0" prefWidth="67.0" text="Quốc Tịch" />
+            <Label layoutX="556.0" layoutY="34.0" prefHeight="17.0" prefWidth="120.0" text="Phân loại khách hàng" />
+            <Label layoutX="556.0" layoutY="116.0" prefHeight="17.0" prefWidth="73.0" text="Tên tổ chức" />
+            <TextField fx:id="tenKH" layoutX="121.0" layoutY="30.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="diaChiKH" layoutX="121.0" layoutY="78.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="ngaySinhKH" layoutX="357.0" layoutY="30.0" prefHeight="25.0" prefWidth="135.0" promptText="dd/MM/yyyy" />
+            <TextField fx:id="cmndKH" layoutX="357.0" layoutY="124.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="quocTichKH" layoutX="121.0" layoutY="169.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="tenToChuc" layoutX="556.0" layoutY="145.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="dienThoaiKH" layoutX="357.0" layoutY="78.0" prefHeight="25.0" prefWidth="135.0" />
+            <TextField fx:id="ngheKH" layoutX="357.0" layoutY="169.0" prefHeight="25.0" prefWidth="135.0" />
+            <ComboBox fx:id="gioiTinhKH" layoutX="121.0" layoutY="124.0" prefHeight="25.0" prefWidth="135.0" />
+            <ComboBox fx:id="phanloaiKH" layoutX="556.0" layoutY="60.0" prefHeight="25.0" prefWidth="135.0" />
+            <Label fx:id="inTenKH" layoutX="121.0" layoutY="55.0" text="" />
+            <Label fx:id="inQuocTich" layoutX="121.0" layoutY="194.0" text="" />
+            <Label fx:id="inCMNDKH" layoutX="357.0" layoutY="149.0" text="" />
+            <Label fx:id="inDiaChiKH" layoutX="121.0" layoutY="103.0" text="" />
+            <Label fx:id="inDienThoaiKH" layoutX="357.0" layoutY="103.0" text="" />
+            <Label fx:id="inNgaySinhKH" layoutX="357.0" layoutY="55.0" text="" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-4.0" layoutY="241.0" prefHeight="267.0" prefWidth="786.0">
+         <children>
+            <Label layoutX="340.0" layoutY="3.0" prefHeight="23.0" prefWidth="120.0" text="Thông tin đặt phòng" />
+            <Label layoutX="14.0" layoutY="35.0" prefHeight="17.0" prefWidth="96.0" text="Số lượng phòng" />
+            <TextField fx:id="soLuongPhong" layoutX="120.0" layoutY="31.0" prefHeight="25.0" prefWidth="120.0" />
+            <TextField fx:id="ngayDangKi" layoutX="353.0" layoutY="31.0" prefHeight="25.0" prefWidth="120.0" promptText="dd/MM/yyyy" />
+            <Label layoutX="269.0" layoutY="35.0" text="Ngày đăng kí" />
+            <Label layoutX="531.0" layoutY="35.0" text="Ngày đến" />
+            <TextField fx:id="ngayDen" layoutX="609.0" layoutY="31.0" prefHeight="25.0" prefWidth="120.0" promptText="dd/MM/yyyy" />
+            <Label fx:id="inNgayDangKi" layoutX="353.0" layoutY="56.0" text="" />
+            <Label fx:id="inNgayDen" layoutX="609.0" layoutY="56.0" text="" />
+            <Label layoutX="19.0" layoutY="97.0" text="Phòng" />
+            <ComboBox fx:id="phong" layoutX="77.0" layoutY="93.0" prefHeight="25.0" prefWidth="96.0" />
+            <TableView fx:id="table" layoutX="219.0" layoutY="118.0" prefHeight="141.0" prefWidth="509.0">
+              <columns>
+                <TableColumn fx:id="stt" prefWidth="94.0" text="STT" />
+                <TableColumn fx:id="tenPhong" prefWidth="165.0" text="Tên Phòng" />
+                  <TableColumn fx:id="ngayDi" prefWidth="118.0" text="Ngày dự kiến trả" />
+                  <TableColumn fx:id="moTaPhong" prefWidth="130.0" text="Mô tả phòng" />
+              </columns>
+            </TableView>
+            <Label layoutX="219.0" layoutY="86.0" prefHeight="23.0" prefWidth="155.0" text="Thông tin các phòng đã đặt" />
+            <TextArea fx:id="moTa" layoutX="14.0" layoutY="146.0" prefHeight="85.0" prefWidth="168.0" />
+            <Label layoutX="19.0" layoutY="125.0" text="Mô tả phòng" />
+            <Button fx:id="add" layoutX="87.0" layoutY="231.0" mnemonicParsing="false" text="Thêm" />
+            <Button fx:id="remove" layoutX="136.0" layoutY="231.0" mnemonicParsing="false" text="Xóa" />
+            <Label fx:id="inNgayDi" layoutX="728.0" layoutY="146.0" />
+            <Label layoutX="557.0" layoutY="97.0" text="Tiền cọc" />
+            <Label fx:id="deposit" layoutX="624.0" layoutY="97.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="book" layoutX="654.0" layoutY="508.0" mnemonicParsing="false" text="Đăt Phòng" />
+      <Separator layoutY="240.0" prefHeight="0.0" prefWidth="769.0" />
+   </children>
+</AnchorPane>

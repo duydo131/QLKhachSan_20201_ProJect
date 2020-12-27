@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="469.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerStatisticalController">
+   <children>
+      <TableView fx:id="table" layoutX="35.0" layoutY="96.0" prefHeight="279.0" prefWidth="557.0">
+        <columns>
+          <TableColumn fx:id="numerical" prefWidth="55.0" text="STT" />
+          <TableColumn fx:id="id" prefWidth="115.0" text="Mã khách hàng" />
+            <TableColumn fx:id="name" prefWidth="140.0" text="Tên khách hàng" />
+            <TableColumn fx:id="quantityLease" prefWidth="114.0" text="Số lần thuê" />
+            <TableColumn fx:id="quantityPay" prefWidth="132.0" text="Tổng ngày thuê" />
+        </columns>
+      </TableView>
+      <Label layoutX="249.0" layoutY="6.0" text="Thống kê khách hàng">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="603.0" layoutY="78.0" text="Tìm kiếm theo ID" />
+      <Label layoutX="603.0" layoutY="130.0" text="Tìm kiếm theo Tên" />
+      <TextField fx:id="idS" layoutX="603.0" layoutY="95.0" prefHeight="25.0" prefWidth="119.0" />
+      <TextField fx:id="nameS" layoutX="603.0" layoutY="147.0" prefHeight="25.0" prefWidth="119.0" />
+      <Button fx:id="search" layoutX="603.0" layoutY="210.0" mnemonicParsing="false" text="Tìm kiếm" />
+      <ComboBox fx:id="choose" layoutX="180.0" layoutY="46.0" prefHeight="25.0" prefWidth="112.0" />
+      <Label layoutX="79.0" layoutY="50.0" text="Chọn thời gian" />
+   </children>
+</AnchorPane>

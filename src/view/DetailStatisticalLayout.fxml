@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="483.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailSalesController">
+   <children>
+      <Label fx:id="name" layoutX="231.0" layoutY="37.0" text="z">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="64.0" layoutY="74.0" prefHeight="356.0" prefWidth="628.0">
+        <columns>
+          <TableColumn fx:id="numerical" prefWidth="41.0" text="STT" />
+          <TableColumn fx:id="idRoom" prefWidth="91.0" text="Mã thuê phòng" />
+            <TableColumn fx:id="customer" prefWidth="108.0" text="Người thuê" />
+            <TableColumn fx:id="staff" prefWidth="99.0" text="Người cho thuê" />
+            <TableColumn fx:id="room" prefWidth="79.0" text="Phòng thuê" />
+            <TableColumn fx:id="quantity" prefWidth="105.0" text="Số ngày thuê" />
+            <TableColumn fx:id="total" prefWidth="103.0" text="Tổng tiền" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

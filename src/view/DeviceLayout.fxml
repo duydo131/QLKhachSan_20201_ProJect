@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeviceController">
+   <children>
+      <Label layoutX="344.0" layoutY="48.0" prefHeight="37.0" prefWidth="156.0" text="Danh Sách Thiết Bị">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="225.0" layoutY="113.0" prefHeight="246.0" prefWidth="432.0">
+        <columns>
+          <TableColumn fx:id="stt" prefWidth="75.0" text="STT" />
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="ten" prefWidth="149.0" text="Tên Thiết Bị" />
+            <TableColumn fx:id="gia" prefWidth="132.0" text="Giá" />
+        </columns>
+      </TableView>
+      <Button fx:id="scan" layoutX="604.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" text="In" />
+   </children>
+</AnchorPane>

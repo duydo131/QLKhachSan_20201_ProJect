@@ -1,0 +1,109 @@
+{
+ "ngay": {
+  "Month": "Month_Value",
+  "Year": "Year_Value",
+  "Day": "Day_Value"
+ },
+ "nv": [
+  {
+   "GioiTinh": "GioiTinh_Value0",
+   "DienThoai": "DienThoai_Value0",
+   "Stt": "Stt_Value0",
+   "ChuyenMon": "ChuyenMon_Value0",
+   "NgaySinh": "NgaySinh_Value0",
+   "ID": "ID_Value0",
+   "Ten": "Ten_Value0",
+   "CMND": "CMND_Value0"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value1",
+   "DienThoai": "DienThoai_Value1",
+   "Stt": "Stt_Value1",
+   "ChuyenMon": "ChuyenMon_Value1",
+   "NgaySinh": "NgaySinh_Value1",
+   "ID": "ID_Value1",
+   "Ten": "Ten_Value1",
+   "CMND": "CMND_Value1"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value2",
+   "DienThoai": "DienThoai_Value2",
+   "Stt": "Stt_Value2",
+   "ChuyenMon": "ChuyenMon_Value2",
+   "NgaySinh": "NgaySinh_Value2",
+   "ID": "ID_Value2",
+   "Ten": "Ten_Value2",
+   "CMND": "CMND_Value2"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value3",
+   "DienThoai": "DienThoai_Value3",
+   "Stt": "Stt_Value3",
+   "ChuyenMon": "ChuyenMon_Value3",
+   "NgaySinh": "NgaySinh_Value3",
+   "ID": "ID_Value3",
+   "Ten": "Ten_Value3",
+   "CMND": "CMND_Value3"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value4",
+   "DienThoai": "DienThoai_Value4",
+   "Stt": "Stt_Value4",
+   "ChuyenMon": "ChuyenMon_Value4",
+   "NgaySinh": "NgaySinh_Value4",
+   "ID": "ID_Value4",
+   "Ten": "Ten_Value4",
+   "CMND": "CMND_Value4"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value5",
+   "DienThoai": "DienThoai_Value5",
+   "Stt": "Stt_Value5",
+   "ChuyenMon": "ChuyenMon_Value5",
+   "NgaySinh": "NgaySinh_Value5",
+   "ID": "ID_Value5",
+   "Ten": "Ten_Value5",
+   "CMND": "CMND_Value5"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value6",
+   "DienThoai": "DienThoai_Value6",
+   "Stt": "Stt_Value6",
+   "ChuyenMon": "ChuyenMon_Value6",
+   "NgaySinh": "NgaySinh_Value6",
+   "ID": "ID_Value6",
+   "Ten": "Ten_Value6",
+   "CMND": "CMND_Value6"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value7",
+   "DienThoai": "DienThoai_Value7",
+   "Stt": "Stt_Value7",
+   "ChuyenMon": "ChuyenMon_Value7",
+   "NgaySinh": "NgaySinh_Value7",
+   "ID": "ID_Value7",
+   "Ten": "Ten_Value7",
+   "CMND": "CMND_Value7"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value8",
+   "DienThoai": "DienThoai_Value8",
+   "Stt": "Stt_Value8",
+   "ChuyenMon": "ChuyenMon_Value8",
+   "NgaySinh": "NgaySinh_Value8",
+   "ID": "ID_Value8",
+   "Ten": "Ten_Value8",
+   "CMND": "CMND_Value8"
+  },
+  {
+   "GioiTinh": "GioiTinh_Value9",
+   "DienThoai": "DienThoai_Value9",
+   "Stt": "Stt_Value9",
+   "ChuyenMon": "ChuyenMon_Value9",
+   "NgaySinh": "NgaySinh_Value9",
+   "ID": "ID_Value9",
+   "Ten": "Ten_Value9",
+   "CMND": "CMND_Value9"
+  }
+ ]
+}
