@@ -29,5 +29,6 @@
       <Button fx:id="search" layoutX="603.0" layoutY="210.0" mnemonicParsing="false" text="Tìm kiếm" />
       <ComboBox fx:id="choose" layoutX="180.0" layoutY="46.0" prefHeight="25.0" prefWidth="112.0" />
       <Label layoutX="79.0" layoutY="50.0" text="Chọn thời gian" />
+      <Button fx:id="scan" layoutX="540.0" layoutY="391.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="In" />
    </children>
 </AnchorPane>

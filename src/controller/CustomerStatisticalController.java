@@ -15,6 +15,8 @@ import dao.InfoDAO;
 import dao.KhachHangDao;
 import daoimpl.InfoDAOImpl;
 import daoimpl.KhachHangDaoImpl;
+import generate.DOCX.GenerateDocx;
+import generate.DOCX.ThongKeKhachHangDocx;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -30,6 +32,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import model.KhachHang;
 import model.add.Info;
 import model.add.StaffStatisticalModel;
+import utils.Util;
 
 public class CustomerStatisticalController implements Initializable{
 	
@@ -65,6 +68,9 @@ public class CustomerStatisticalController implements Initializable{
 	
 	@FXML
 	TextField nameS;
+	
+	@FXML
+	Button scan;
 	
 	private List<StaffStatisticalModel> list = new ArrayList<>();
 	private Map<Long, KhachHang> dataStaff = new HashMap<>();
@@ -139,6 +145,19 @@ public class CustomerStatisticalController implements Initializable{
 				if(!idSearch.equals("")) listT = listT.parallelStream().filter(st -> (st.getId() + "").equals(idSearch)).collect(Collectors.toCollection(ArrayList::new));
 				if(!ten.equals("")) listT = listT.parallelStream().filter(st -> st.getName().equals(ten)).collect(Collectors.toCollection(ArrayList::new));
 				table.setItems(FXCollections.observableArrayList(listT));
+			}
+		});
+
+		scan.setOnAction(new EventHandler<ActionEvent>() {
+			
+			@Override
+			public void handle(ActionEvent event) {
+				List<StaffStatisticalModel> list = (List<StaffStatisticalModel>)table.getItems();
+				GenerateDocx docx = new ThongKeKhachHangDocx(new Date(), list);
+				String file = docx.generateDocx();
+				Util util = new Util();
+				util.Toast("Thành công...");
+				if(!file.equals("")) util.open(file);
 			}
 		});
 	}

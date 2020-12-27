@@ -1,0 +1,79 @@
+{
+ "ngay": {
+  "Month": "Month_Value",
+  "Year": "Year_Value",
+  "Day": "Day_Value"
+ },
+ "kh": [
+  {
+   "Stt": "Stt_Value0",
+   "QuantityLease": "QuantityLease_Value0",
+   "QuantityPay": "QuantityPay_Value0",
+   "Id": "Id_Value0",
+   "Name": "Name_Value0"
+  },
+  {
+   "Stt": "Stt_Value1",
+   "QuantityLease": "QuantityLease_Value1",
+   "QuantityPay": "QuantityPay_Value1",
+   "Id": "Id_Value1",
+   "Name": "Name_Value1"
+  },
+  {
+   "Stt": "Stt_Value2",
+   "QuantityLease": "QuantityLease_Value2",
+   "QuantityPay": "QuantityPay_Value2",
+   "Id": "Id_Value2",
+   "Name": "Name_Value2"
+  },
+  {
+   "Stt": "Stt_Value3",
+   "QuantityLease": "QuantityLease_Value3",
+   "QuantityPay": "QuantityPay_Value3",
+   "Id": "Id_Value3",
+   "Name": "Name_Value3"
+  },
+  {
+   "Stt": "Stt_Value4",
+   "QuantityLease": "QuantityLease_Value4",
+   "QuantityPay": "QuantityPay_Value4",
+   "Id": "Id_Value4",
+   "Name": "Name_Value4"
+  },
+  {
+   "Stt": "Stt_Value5",
+   "QuantityLease": "QuantityLease_Value5",
+   "QuantityPay": "QuantityPay_Value5",
+   "Id": "Id_Value5",
+   "Name": "Name_Value5"
+  },
+  {
+   "Stt": "Stt_Value6",
+   "QuantityLease": "QuantityLease_Value6",
+   "QuantityPay": "QuantityPay_Value6",
+   "Id": "Id_Value6",
+   "Name": "Name_Value6"
+  },
+  {
+   "Stt": "Stt_Value7",
+   "QuantityLease": "QuantityLease_Value7",
+   "QuantityPay": "QuantityPay_Value7",
+   "Id": "Id_Value7",
+   "Name": "Name_Value7"
+  },
+  {
+   "Stt": "Stt_Value8",
+   "QuantityLease": "QuantityLease_Value8",
+   "QuantityPay": "QuantityPay_Value8",
+   "Id": "Id_Value8",
+   "Name": "Name_Value8"
+  },
+  {
+   "Stt": "Stt_Value9",
+   "QuantityLease": "QuantityLease_Value9",
+   "QuantityPay": "QuantityPay_Value9",
+   "Id": "Id_Value9",
+   "Name": "Name_Value9"
+  }
+ ]
+}

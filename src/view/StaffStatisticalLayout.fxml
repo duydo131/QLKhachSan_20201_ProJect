@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="469.0" prefWidth="747.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.StaffStatisticalController">
+<AnchorPane prefHeight="469.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StaffStatisticalController">
    <children>
       <TableView fx:id="table" layoutX="35.0" layoutY="96.0" prefHeight="279.0" prefWidth="557.0">
         <columns>
@@ -30,5 +29,6 @@
       <Button fx:id="search" layoutX="603.0" layoutY="210.0" mnemonicParsing="false" text="Tìm kiếm" />
       <ComboBox fx:id="choose" layoutX="180.0" layoutY="46.0" prefHeight="25.0" prefWidth="112.0" />
       <Label layoutX="79.0" layoutY="50.0" text="Chọn thời gian" />
+      <Button fx:id="scan" layoutX="529.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" text="In" />
    </children>
 </AnchorPane>

@@ -22,6 +22,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import model.DangNhap;
@@ -45,10 +46,10 @@ public class RegisterController implements Initializable{
 	TextField chuyenMon;
 	
 	@FXML
-	TextField matKhau1;
+	PasswordField matKhau1;
 	
 	@FXML
-	TextField matKhau2;
+	PasswordField matKhau2;
 	
 	@FXML
 	TextField tenDangNhap;

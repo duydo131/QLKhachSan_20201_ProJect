@@ -16,6 +16,9 @@ import java.util.stream.Collectors;
 
 import dao.InfoDAO;
 import daoimpl.InfoDAOImpl;
+import generate.Total;
+import generate.DOCX.GenerateDocx;
+import generate.DOCX.ThongKeDoanhThuDocx;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -37,6 +40,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import model.add.Info;
 import model.add.SalesStatistical;
+import utils.Util;
 
 public class SalesStatisticalController implements Initializable{
 	
@@ -78,6 +82,9 @@ public class SalesStatisticalController implements Initializable{
 	
 	@FXML
 	Button search;
+	
+	@FXML
+	Button scan;
 	
 	private Date date = new Date();
 	private List<SalesStatistical> listSale = new ArrayList<>();
@@ -181,6 +188,27 @@ public class SalesStatisticalController implements Initializable{
 					store.setTime(rows.get(0).getTime());
 					Redirect();
 				}
+			}
+		});
+		
+		scan.setOnAction(new EventHandler<ActionEvent>() {
+			
+			@Override
+			public void handle(ActionEvent event) {
+				List<SalesStatistical> list = (List<SalesStatistical>)table.getItems();
+				Long tot = 0L;
+				for(SalesStatistical sale : list) {
+					tot += sale.getTotalMoney();
+				}
+				String time = (String)choose.getValue();
+				int t = map.get(time) - 1;
+				String stime = (t > 0 ? c1[t] : "Ngày");
+				Total total = new Total(stime, tot);
+				GenerateDocx docx = new ThongKeDoanhThuDocx(new Date(), list, total);
+				String file = docx.generateDocx();
+				Util util = new Util();
+				util.Toast("Thành công...");
+				if(!file.equals("")) util.open(file);
 			}
 		});
 	}

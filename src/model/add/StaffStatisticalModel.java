@@ -1,6 +1,7 @@
 package model.add;
 
-public class StaffStatisticalModel {
+public class StaffStatisticalModel extends Docx{
+	private Integer stt;
 	private Long id;
 	private String name;
 	private Integer quantityLease;
@@ -14,6 +15,14 @@ public class StaffStatisticalModel {
 		this.name = name;
 		this.quantityLease = quantityLease;
 		this.quantityPay = quantityPay;
+	}
+
+	public Integer getStt() {
+		return stt;
+	}
+
+	public void setStt(Integer stt) {
+		this.stt = stt;
 	}
 
 	public Long getId() {

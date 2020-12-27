@@ -1,6 +1,7 @@
 package model.add;
 
-public class SalesStatistical {
+public class SalesStatistical extends Docx{
+	private Integer stt;
 	private String time;
 	private Integer amountCustomer;
 	private Integer amountRoom;
@@ -14,6 +15,14 @@ public class SalesStatistical {
 		this.amountCustomer = amountCustomer;
 		this.amountRoom = amountRoom;
 		this.totalMoney = totalMoney;
+	}
+
+	public Integer getStt() {
+		return stt;
+	}
+
+	public void setStt(Integer stt) {
+		this.stt = stt;
 	}
 
 	public String getTime() {
